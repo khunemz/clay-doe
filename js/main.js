@@ -85,8 +85,18 @@ var mixer = mixitup('.portfolio__container', {
 });
 
 /* Link active portfolio */ 
+const activePortfolio = document.querySelectorAll('.portfolio__item');
 
+function activePortfolio() {
+  if(activePortfolio) {
+    activePortfolio.forEach(p => {
+      p.classList.remove('active-portfolio')
+      this.classList.add('active-portfolio')
+    });
+  }
+}
 
+activePortfolio.forEach( p => p.addEventListener('click', activePortfolio))
 /*===== SWIPER CAROUSEL =====*/ 
 
 
