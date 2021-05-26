@@ -75,6 +75,15 @@ window.addEventListener('scroll', scrollTop);
 
 /*===== MIXITUP FILTER PORTFOLIO =====*/ 
 
+var mixer = mixitup('.portfolio__container', {
+  selectors: {
+      target: '.portfolio__content'
+  },
+  animation: {
+      duration: 300
+  }
+});
+
 /* Link active portfolio */ 
 
 
