@@ -319,9 +319,20 @@ img{
 }
 
 .button:hover {
-  background-color: var(--first-color-dark);
+  background-color: var(--first-color);
 }
 
+.button-light {
+  background-color: var(--first-color-light);
+}
+.button-white {
+background-color: var(--first-color-lighten);
+color: var(--first-color-dark);
+}
+
+.button-white:hover {
+  background-color: var(--first-color-light);
+}
 
 /*===== ABOUT =====*/
 .about__data {
@@ -417,6 +428,10 @@ img{
 .services__data:hover {
   transform: translateY(-.5rem);
   box-shadow: 0 6px 8px rgba(174, 190, 205, .4);
+}
+
+.services__data .button:hover {
+  background-color: var(--first-color-light);
 }
 /*===== PROJECT IN MIND =====*/
 .project {
