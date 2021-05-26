@@ -100,6 +100,23 @@ listActivePortfolio.forEach( p => p.addEventListener('click', activePortfolio))
 /*===== SWIPER CAROUSEL =====*/ 
 
 
+const swiper = new Swiper('.swiper-container', {
+  spaceBetween: 16,
+  grabCursor: true ,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    }
+  }
+});
 /*===== GSAP ANIMATION =====*/ 
 
 

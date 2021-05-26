@@ -110,7 +110,7 @@ img{
   margin-bottom: var(--mb-3);
 }
 
-.secion-subtitle {
+.section-subtitle {
   display: block;
   font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
@@ -521,8 +521,36 @@ color: var(--first-color-dark);
 }
 
 /*===== TESTIMONIAL =====*/
+.testimonial__content {
+  display: grid;
+  background-color: var(--first-color-dark);
+  color: var(--first-color-lighten);
+  border-radius: .5rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(47, 10, 13, .25);
+}
 
+.testimonial__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  justify-self: center;
+  margin-bottom: var(--mb-1);
+}
 
+.testimonial__client {
+  font-size: var(--small-font-size);
+  color: var(--first-color-light);
+}
+
+.swiper-pagination {
+  position: initial;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
 /*===== CONTACTME =====*/
 
 
