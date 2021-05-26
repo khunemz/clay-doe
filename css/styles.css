@@ -758,9 +758,7 @@ color: var(--first-color-dark);
 
 
   .portfolio__data {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    display: block;
   }
 
   .project__icon, .project__title, .project__description {
@@ -777,6 +775,13 @@ color: var(--first-color-dark);
 
 }
 
-@media screen (min-width: 1024px) {
-  
+@media screen and (min-width: 1024px) {
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .qualification__container {
+    column-gap: 6rem;
+  }
 }
